@@ -1,0 +1,8 @@
+
+---- (D) 01-ITACADEMY                                                                                         12/13/2022 19:27:56
+---- (D) 02-MIT                                                                                               12/13/2022 20:21:00
+-------- (D) 01 - LIDERAZGO EN LA INNOVACION                                                                      12/13/2022 20:21:00
+------------ (D) 00 - DOCS MEUS                                                                                       12/14/2022 16:56:18
+---------------- (F) LIDERAZGO EN LA INNOVACION - MIT.docx                                                                12/13/2022 23:01:18
+---------------- (F) ~$DERAZGO EN LA INNOVACION - MIT.docx                                                                12/14/2022 16:56:18
+------------ (D) 01 - DOCS CURS                                                                                       12/13/2022 19:29:04
