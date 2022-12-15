@@ -7,7 +7,10 @@ public class Persona implements Serializable {
 	// ATRIBUTS
 	private String nom;
 	private String cognom;
-	private String dni;
+	/**
+	 * Aquesta propietat no es serialitza
+	 */
+	private transient  String dni;
 
 	// CONSTRUCTORA
 	public Persona(String nom, String cognom, String dni) {
@@ -59,6 +62,13 @@ public class Persona implements Serializable {
 		Persona other = (Persona) obj;
 		return Objects.equals(cognom, other.cognom) && Objects.equals(dni, other.dni) && Objects.equals(nom, other.nom);
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "Persona{" +
+				"nom='" + nom + '\'' +
+				", cognom='" + cognom + '\'' +
+				", dni='" + dni + '\'' +
+				'}';
+	}
 }

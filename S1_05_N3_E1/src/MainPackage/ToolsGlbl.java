@@ -63,7 +63,7 @@ public class ToolsGlbl {
 		}
 		System.out.println(missatge);
 
-		// 2) Es demana al usuari entri 1 número
+		// 2) Es demana al usuari entri un número
 		while (!correcte) {
 			try {
 				myScanner = new Scanner(System.in);
@@ -118,6 +118,40 @@ public class ToolsGlbl {
 			}
 		}
 		return myString;
+
+	}
+
+	public static boolean llegirSiNo(String missatge) {
+		// DECLARACIÓ VARIABLES
+		boolean correcte = false, booleanOut = false;
+		String myString = "";
+		Scanner myScanner = new Scanner(System.in);
+
+		// ACCIONS
+		// Estarem en el bucle fins que el format sigui correcte
+		while (!correcte) {
+			try {
+				System.out.println(missatge);
+
+				myString = myScanner.next();
+
+				if (myString.length() == 1) {
+					if((myString.charAt(0) == 's' || myString.charAt(0) == 'n')) {
+						correcte = true;
+						booleanOut = (myString.charAt(0) == 's')? true:false;
+					}else {
+						throw new Exception();
+					}
+				} else {
+					throw new Exception();
+				}
+			} catch (Exception ex) {
+				System.out.println("Error de format, torna-ho a provar");
+			}
+		}
+
+		// SORTIDA
+		return booleanOut;
 
 	}
 
