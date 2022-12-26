@@ -1,6 +1,5 @@
 package ListPackage;
 
-import java.awt.event.ItemEvent;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,6 +7,10 @@ import java.util.Arrays;
 public class ToList {
     //region ATTRIBUTES
     private ArrayList<String> elementsDirectory;
+
+    Double D; double d; Integer I; int i; Long L; long l;
+    Float F; float f; Boolean B; boolean b;
+
 
     //endregion ATTRIBUTES
 
